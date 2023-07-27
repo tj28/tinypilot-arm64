@@ -19,7 +19,7 @@ HAS_PRO_INSTALLED=0
 SCRIPT_DIR="$(dirname "$0")"
 
 # Ensure we have dependencies if we don't install tinypilot via .deb, and ensure we're starting clean
-sudo apt install -y libc6 libgcc-s1 libstdc++6 adduser python3 python3-pip python3-venv sudo
+sudo apt install -y libc6 libgcc-s1 libstdc++6 adduser python3 python3-pip python3-venv sudo nginx
 # sudo apt --purge remove -y tinypilot
 
 # If they're piping this script in from stdin, guess that TinyPilot is
