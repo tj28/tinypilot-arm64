@@ -33,10 +33,11 @@ systemctl disable tinypilot-updater
 
 ### Not working
 1. H.264
+   
 `
 Jul 27 19:44:26 tritium-h5 launch[1491]: -- INFO  [19.581    stream] -- H264: Configuring encoder: DMA=0 ...
 Jul 27 19:44:26 tritium-h5 launch[1491]: -- ERROR [19.581    stream] -- H264: Can't open encoder device: No such file or directory
 Jul 27 19:44:26 tritium-h5 launch[1491]: -- ERROR [19.581    stream] -- H264: Encoder destroyed due an error (prepare)
 `
-2. Updating
-3. Untested: TC358743 (CSI) capture device
+3. Updating
+4. Untested: TC358743 (CSI) capture device
