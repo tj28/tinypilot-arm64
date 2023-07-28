@@ -14,7 +14,7 @@ touch /etc/pip.conf
 chmod 775 /etc/pip.conf
 echo -e "[global]\nextra-index-url=https://www.piwheels.org/simple\n" > /etc/pip.conf
 ```
-4. Download the `ustreamer` tarball in this repo. This `.deb` was created via the `install from source` script in the TinyPilot main repo, after modifying the target architecture to be `arm64` rather than `armhf` or `arm/v7` in the source files. I then used `alien` to convert it to a tarball.
+4. Download the `ustreamer` tarball in this repo. The `.deb` files included in this repo just for reference/troubleshooting; they were created via the `install from source` script in the TinyPilot main repo, after modifying the target architecture to be `arm64` rather than `armhf` or `arm/v7` in the source files. I then used `alien` to convert it to a tarball.
 5. Extract & merge the output folders with your root directory `/`. The `install` folder does not have to be merged. I suggest using `rsync -a`
 6. Run `doinst.sh` in the `install` folder. If any errors appear, remediate accordingly.
 7. Repeat the same process with the `tinypilot` tarball.
