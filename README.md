@@ -2,7 +2,7 @@
 A hacky solution to getting [TinyPilot](https://github.com/tiny-pilot/tinypilot) working on arm64 devices supporting USB OTG such as the Tritium H5. If you haven't bought a device yet, trust me, just get a Raspberry Pi 4.
 
 ## Overview
-By manually installing the relevant .deb files and slightly modifying the install scripts, we can get this working on arm64.
+By manually installing the relevant .deb files and slightly modifying the install scripts, we can get this working on arm64. For the modifications, I modified `requirements.txt` to play more nicely with more recent versions of Python, commented out the tinypilot `.deb` installation portion, and modified `ansible-role-ustreamer` to point to an arm64 version of `ustreamer` rather than `arm/v7`.
 
 ## Guide for Tritium H5
 1. OS: I suggest flashing [Armbian Bullseye](http://xogium.performanceservers.nl/archive/tritium-h5/archive/Armbian_23.02.2_Tritium-h5_bullseye_current_5.15.93.img.xz), as I've found using a too recent version of Debian will cause errors during runtime to the Python version being much higher than expected
