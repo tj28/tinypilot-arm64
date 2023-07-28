@@ -27,6 +27,6 @@ systemctl enable ustreamer
 systemctl enable usb-gadget
 systemctl disable tinypilot-updater
 ```
-11. Run `ls /dev` and identify which devices we are using for I/O. For me, my capture card was `/dev/video0`, and the virtual USB OTG keyboard and mouse were `/dev/hidg0` and `/dev/hidg0`, respectively.
+11. Run `ls /dev` and identify which devices we are using for I/O. For me, my capture card was `/dev/video0`, and the virtual USB OTG keyboard and mouse were `/dev/hidg0` and `/dev/hidg1`, respectively.
 12. Add `ustreamer_video_path: /dev/video0` to `/home/tinypilot/settings.yml` as necessary. Inspect `/home/tinypilot/app_settings.cfg` as well for KBM input.
 13. Restart one more time, and if all went well, TinyPilot will be running successfully.
