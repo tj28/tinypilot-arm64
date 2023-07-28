@@ -6,7 +6,7 @@ By manually installing the relevant .deb files and slightly modifying the instal
 
 ## Guide for Tritium H5
 1. OS: I suggest flashing [Armbian Bullseye](http://xogium.performanceservers.nl/archive/tritium-h5/archive/Armbian_23.02.2_Tritium-h5_bullseye_current_5.15.93.img.xz), as I've found using a too recent version of Debian will cause errors during runtime to the Python version being much higher than expected
-2. Follow (WarheadsSE's initial guide)[https://gist.github.com/WarheadsSE/f90359e0f6955478c806ecbd04a643a3]. The `dts` file can be compiled via `dtc -I dts -O dtb -o h3-cc-otg.dtbo h3-cc-otg.dts`
+2. Follow (WarheadsSE initial guide)[https://gist.github.com/WarheadsSE/f90359e0f6955478c806ecbd04a643a3]. The `dts` file can be compiled via `dtc -I dts -O dtb -o h3-cc-otg.dtbo h3-cc-otg.dts`
 3. Fix some dependencies since we aren't using RasPi OS, nor the original `.deb` files:
 ```bash
 apt install -y libc6 libgcc-s1 libstdc++6 adduser python3 python3-pip python3-venv sudo nginx
