@@ -30,3 +30,13 @@ systemctl disable tinypilot-updater
 11. Run `ls /dev` and identify which devices we are using for I/O. For me, my capture card was `/dev/video0`, and the virtual USB OTG keyboard and mouse were `/dev/hidg0` and `/dev/hidg1`, respectively.
 12. Add `ustreamer_video_path: /dev/video0` to `/home/tinypilot/settings.yml` as necessary. Inspect `/home/tinypilot/app_settings.cfg` as well for KBM input.
 13. Restart one more time, and if all went well, TinyPilot will be running successfully.
+
+### Not working
+1. H.264
+`
+Jul 27 19:44:26 tritium-h5 launch[1491]: -- INFO  [19.581    stream] -- H264: Configuring encoder: DMA=0 ...
+Jul 27 19:44:26 tritium-h5 launch[1491]: -- ERROR [19.581    stream] -- H264: Can't open encoder device: No such file or directory
+Jul 27 19:44:26 tritium-h5 launch[1491]: -- ERROR [19.581    stream] -- H264: Encoder destroyed due an error (prepare)
+`
+2. Updating
+3. Untested: TC358743 (CSI) capture device
